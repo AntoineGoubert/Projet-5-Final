@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 import tensorflow_hub as hub
 import pickle
+import os
+from pml import app
+port = int(os.environ.get('PORT', 5000))
 
 model = pickle.load(open('USE.pkl', 'rb'))
 embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
@@ -29,4 +32,4 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=port)
