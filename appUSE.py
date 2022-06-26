@@ -9,6 +9,7 @@ port = int(os.getenv('PORT'))
 model = pickle.load(open('USE.pkl', 'rb'))
 embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 tsne=pickle.load(open("tsne.pkl",'rb'))
+
 app = Flask(__name__)
 
 
