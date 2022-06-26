@@ -1,6 +1,5 @@
 pandas
 tensorflow_hub
-tensorflow.keras.preprocessing
 scikit-learn
-mlinsights
+nltk
 pickle

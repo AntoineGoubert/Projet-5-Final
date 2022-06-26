@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from mlinsights.mlmodel import PredictableTSNE
 import tensorflow_hub as hub
 import pickle
 import nltk
