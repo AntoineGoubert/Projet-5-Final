@@ -3,7 +3,8 @@ import tensorflow_hub as hub
 import pickle
 import os
 from pml import app
-port = int(os.environ.get('PORT', 5000))
+
+port = int(os.getenv('PORT'))
 
 model = pickle.load(open('USE.pkl', 'rb'))
 embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
