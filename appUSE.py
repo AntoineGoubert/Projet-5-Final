@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request
 import tensorflow_hub as hub
 import pickle
-import nltk
 
 model = pickle.load(open('USE.pkl', 'rb'))
 embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
