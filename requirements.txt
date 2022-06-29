@@ -1,4 +1,5 @@
 tensorflow_hub
+tensorflow
 scikit-learn
 pml
 Flask
