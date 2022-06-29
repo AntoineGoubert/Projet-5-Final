@@ -1,5 +1,5 @@
 mlinsights
-protobuf<3.20,>=3.9.2
+protobuf==3.9.2
 tensorflow_hub
 tensorflow
 scikit-learn
