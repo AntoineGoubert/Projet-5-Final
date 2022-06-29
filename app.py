@@ -1,5 +1,6 @@
 import tensorflow
 import tensorflow_hub as hub
+import mlinsights
 import pickle
 import streamlit as st
 
