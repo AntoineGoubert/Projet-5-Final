@@ -7,8 +7,8 @@ model = pickle.load(open('USE.pkl', 'rb'))
 embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 tsne=pickle.load(open("tsne.pkl",'rb'))
 
-data1 = str(request.form['a'])
-data2 = str(request.form['b'])
+data1 = st.text_input("Titre")
+data2 = st.text_input("Texte")
 alldata = data1 + ' ' + data2
 
 features=tsne.transform(embedmodel([alldata]))
