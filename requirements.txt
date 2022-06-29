@@ -1,8 +1,9 @@
 pip
 
 streamlit
-mlinsights
+mlinsights.mlmodel
 tensorflow_hub
 tensorflow
 protobuf==3.19.4
 scikit-learn
+sklearn.ensemble
