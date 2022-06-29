@@ -1,4 +1,5 @@
 mlinsights
 tensorflow_hub
 tensorflow
+pickle
 scikit-learn
