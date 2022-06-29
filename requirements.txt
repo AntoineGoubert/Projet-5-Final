@@ -1,7 +1,5 @@
-pip install
-
 mlinsights
-protobuf==3.19.4
 tensorflow_hub
 tensorflow
+protobuf==3.19.4
 scikit-learn
