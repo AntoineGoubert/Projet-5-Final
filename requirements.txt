@@ -1,3 +1,4 @@
+mlinsights
 tensorflow_hub
 tensorflow
 scikit-learn
