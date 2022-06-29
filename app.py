@@ -18,4 +18,4 @@ alldata = data1 + ' ' + data2
 features=tsne.transform(embedmodel([alldata]))
 pred = model.predict(features)
 
-st.write(pred[0])
+st.write(pred)
