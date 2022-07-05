@@ -6,9 +6,9 @@ import streamlit as st
 import os
 
 
-model = pickle.load(open('USE.pkl', 'rb'))
+model = pickle.load(open("C:/Users/antoi/Dropbox/PC/Documents/GitHub/Projet-5-Final/USE.pkl", 'rb'))
 embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
-tsne=pickle.load(open("tsne.pkl",'rb'))
+tsne=pickle.load(open("C:/Users/antoi/Dropbox/PC/Documents/GitHub/Projet-5-Final/tsne.pkl",'rb'))
 
 data1=st.text_input("Titre")
 data2=st.text_input("Texte")

@@ -1,8 +1,8 @@
 pip
 
-streamlit
-mlinsights
+streamlit~=1.10.0
+mlinsights~=0.3.631
 tensorflow_hub
-tensorflow
+tensorflow~=2.10.0
 protobuf==3.19.4
 scikit-learn
