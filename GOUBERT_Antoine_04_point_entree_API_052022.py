@@ -10,7 +10,7 @@ embedmodel = hub.load("https://tfhub.dev/google/universal-sentence-encoder/4")
 tsne=pickle.load(open("C:/Users/antoi/Dropbox/PC/Documents/GitHub/Projet-5-Final/tsne.pkl",'rb'))
 tags=np.load("C:/Users/antoi/Dropbox/PC/Documents/GitHub/Projet-5-Final/tags.npy")
 
-st.title("StackOverflow tag prediction")
+st.title("StackOverflow tags prediction")
 
 def predict_class():
     alldata = data1 + ' ' + data2
@@ -20,7 +20,7 @@ def predict_class():
     for k in range(len(np.argpartition(pred, -3)[0][-3:])):
         liste += [tags[k]]
         print(tags[k])
-    st.write("The three most likely tags are : ", liste)
+    st.write("The three most likely tags are, in decreasing probability order : ", liste)
 
 data1=st.text_input("Title")
 data2=st.text_input("Body")
